@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectGuid>{3889C9BE-0473-4B41-80E8-C4C923E837E7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AssemblyName>MsgPack.UnitTest</AssemblyName>
-    <TargetFrameworks>net46;netcoreapp1.0;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net46;netcoreapp1.0;</TargetFrameworks>
   </PropertyGroup>
   <Import Project="..\..\MsgPack.Common.props" />
   <PropertyGroup>
@@ -23,6 +23,7 @@
     <PackageReference Include="NUnit3TestAdapter" Version="3.8.0" />
     <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="2.3.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+    <PackageReference Include="Microsoft.CodeCoverage" Version="1.0.3" />
   </ItemGroup>
   <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp1.0'">
     <PackageReference Include="Microsoft.NETCore.App" Version="1.0.5" />
